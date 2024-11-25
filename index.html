@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panita_022</title>
+  <style>
+    /* กำหนดลักษณะของพื้นหลังสีรุ้ง */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #00ff00, #0000ff, #8a2be2); /* พื้นหลังสีรุ้ง */
+      background-size: 400% 400%;
+      animation: gradientBackground 5s ease infinite;
+    }
+
+    /* กำหนดลักษณะของ container */
+    .container {
+      background-color: rgba(255, 255, 255, 0.8); /* พื้นหลังโปร่งใส */
+      border-radius: 15px;
+      padding: 40px;
+      text-align: center;
+      width: 300px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    /* การตกแต่งหัวข้อ */
+    h1 {
+      color: #ff6347; /* สีแดงสด */
+      font-size: 30px;
+      margin-bottom: 20px;
+      transition: color 0.5s ease;
+    }
+
+    h1:hover {
+      color: #ff1493; /* สีชมพูเข้มเมื่อเลื่อนเมาส์ไป */
+    }
+
+    /* ข้อความชื่อและรหัสนักศึกษา */
+    .student-info {
+      font-size: 20px;
+      font-weight: bold;
+      color: #2e7d32; /* สีเขียว */
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .student-info:hover {
+      transform: scale(1.1); /* ขยายข้อความเมื่อเลื่อนเมาส์ */
+    }
+
+    /* ฟุตเตอร์ */
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    /* การเคลื่อนไหวของพื้นหลัง */
+    @keyframes gradientBackground {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ข้อมูลนักศึกษา</h1>
+    <div class="student-info">
+      <p>ชื่อ: Panita Kawsa-ard</p>
+      <p>รหัสนักศึกษา: 67130500022</p>
+    </div>
+    <div class="footer">
+      <p>INT130 Kmutt</p>
+    </div>
+  </div>
+</body>
+</html>
